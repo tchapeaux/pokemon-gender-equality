@@ -45,7 +45,7 @@ figcaption {
   max-width: 750px;
   min-width: 300px;
   margin: 15px auto;
-  padding: 50px;
+  padding: 15px 50px;
 
   background-color: papayawhip;
 }
