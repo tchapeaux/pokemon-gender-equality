@@ -1,8 +1,6 @@
 ﻿# Based on https://bulbapedia.bulbagarden.net/wiki/Prize_money
 # Retrieved 2021-02-25
 # Some tweaks by me
-
-
 Type,Gender,BasePrizeMoney
 Beauty,F,70
 Biker,M,20
