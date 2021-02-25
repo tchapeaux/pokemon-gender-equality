@@ -1,0 +1,55 @@
+body {
+  font-family: "Cabin", sans-serif;
+  font-size: 1.5em;
+  background-color: peachpuff;
+
+  box-sizing: border-box;
+}
+
+p,
+ul {
+  font-size: 0.8em;
+}
+
+a {
+  color: chocolate;
+  text-decoration: none;
+}
+
+a:visited {
+  color: chocolate;
+}
+
+a:hover {
+  text-decoration: underline;
+  text-decoration-thickness: 0.1em;
+}
+
+a:active,
+a:focus {
+  background-color: yellow;
+}
+
+del {
+  text-decoration-thickness: 0.1em;
+  opacity: 0.7;
+}
+
+figcaption {
+  font-size: 0.7em;
+  text-align: center;
+}
+
+#content {
+  width: 90%;
+  max-width: 750px;
+  min-width: 300px;
+  margin: 15px auto;
+  padding: 50px;
+
+  background-color: papayawhip;
+}
+
+video {
+  width: 100%;
+}

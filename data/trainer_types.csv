@@ -1,0 +1,52 @@
+﻿# Based on https://bulbapedia.bulbagarden.net/wiki/Prize_money
+# Retrieved 2021-02-25
+# Some tweaks by me
+
+
+Type,Gender,BasePrizeMoney
+Beauty,F,70
+Biker,M,20
+Bird Keeper,M,25
+Blackbelt,M,25
+Bug Catcher,M,10
+Burglar,M,90
+Channeler,F,30
+Cooltrainer Male,M,35
+Cooltrainer Female,F,35
+Cueball,M,25
+Engineer,M,50
+Fisherman,M,35
+Gambler,M,70
+Gentleman,M,70
+Hiker,M,35
+Junior Trainer Male,M,20
+Junior Trainer Female,F,20
+Juggler,M,35
+Lass,F,15
+Pokemaniac,M,50
+Psychic,M,10
+Rocker,M,25
+Rocket,M,30
+Supernerd,M,25
+Swimmer,M,5
+Sailor,M,30
+Scientist,M,50
+Tamer,M,40
+Youngster,M,15
+# Gym leaders
+Brock,M,99
+Misty,F,99
+Lt Surge,M,99
+Erika,F,99
+Sabrina,F,99
+Koga,M,99
+Blaine,M,99
+Giovanni,M,99
+# Gang of Four
+Lorelei,F,99
+Bruno,M,99
+Agatha,F,99
+Lance,M,99
+# To simplify, we consider that Gary is always 35 (it's sometimes 36)
+# It's also 99 when he is a champion, which will be handled in code
+Gary,M,35
