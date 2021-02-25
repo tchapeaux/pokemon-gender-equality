@@ -1,3 +1,6 @@
+// This script parse the data from the "trainer type" and "trainer encounters" datasets
+// and creates a new JSON dataset that will be directly exploitable for the report
+
 const assert = require("assert").strict;
 const fs = require("fs");
 const parse = require("csv-parse/lib/sync");
@@ -19,7 +22,8 @@ const trainerEncountersRawStr = fs
   .trimStart();
 
 // Compute all encounters
-// We do this by parsing line by line
+// Note that trainer_encounter does not have a standard format
+// So we do the parsing line by line
 
 const trainerEncountersLines = trainerEncountersRawStr.split(/\r?\n/);
 const nbOfLines = trainerEncountersLines.length;
@@ -32,18 +36,23 @@ let currentHighestPokemonLevel = null;
 
 for (let lineIdx = 0; lineIdx < nbOfLines; lineIdx += 1) {
   const line = trainerEncountersLines[lineIdx];
+
+  // Zone names are followed by a line full of "*"
   if (/^\*+$/.test(line)) {
     currentZone = trainerEncountersLines[lineIdx - 1].trim();
     currentSubZone = null;
   }
 
+  // Subzone names are followed by a line full of "-"
   if (/^\-+$/.test(line)) {
     currentSubZone = trainerEncountersLines[lineIdx - 1].trim();
   }
 
+  // Pokemon lines ends with their level in the form LXX (where XX is the level)
   if (/^.*L\d+$/.test(line)) {
     // Pokemon line found!
     // Either the start of a trainer or the middle/end
+    // Trainer lines contains one dash to separate the trainer position and the trainer type
     if (line.includes("-")) {
       // Start of a trainer found!
       currentTrainerType = line.match(/^.*\s-\s(.*?)\s{2,}/)[1];
@@ -55,6 +64,8 @@ for (let lineIdx = 0; lineIdx < nbOfLines; lineIdx += 1) {
     }
   }
 
+  // Empty lines separate trainers
+  // So when we reach one, we know that the current trainer can be stored
   if (line.trim().length === 0 && currentTrainerType) {
     trainerEncounterData.push({
       zone: currentZone,
