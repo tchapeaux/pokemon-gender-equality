@@ -11,12 +11,14 @@ This is the result of my journey to achieve this goal.
 
 The main sources of data are :
 
-- `data/trainer_encounters.txt` adapted from https://gamefaqs.gamespot.com/gameboy/367023-pokemon-red-version/faqs/12776
-- `data/trainer_types.csv` adapted from https://bulbapedia.bulbagarden.net/wiki/Prize_money
+- `data/trainer_encounters.txt` adapted from
+  https://gamefaqs.gamespot.com/gameboy/367023-pokemon-red-version/faqs/12776
+- `data/trainer_types.csv` adapted from
+  https://bulbapedia.bulbagarden.net/wiki/Prize_money
 
 ## See it
 
-Go to https://www.thomaschapeaux.be/pokemon-gender-equality
+Go to http://www.thomaschapeaux.be/pokemon-gender-equality
 
 ## Build it
 
