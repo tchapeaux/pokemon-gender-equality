@@ -7,15 +7,6 @@ You know sometimes when you wake up, you don't remember your dreams very well ex
 I'm not sure why or how my mind settled on this, but it seemed an interesting challenge.
 This is the result of my journey to achieve this goal.
 
-## Data Sources
-
-The main sources of data are :
-
-- `data/trainer_encounters.txt` adapted from
-  https://gamefaqs.gamespot.com/gameboy/367023-pokemon-red-version/faqs/12776
-- `data/trainer_types.csv` adapted from
-  https://bulbapedia.bulbagarden.net/wiki/Prize_money
-
 ## See it
 
 Go to http://www.thomaschapeaux.be/pokemon-gender-equality
