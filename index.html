@@ -1,30 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <title>Genders pay gap: Pokemon Gen 1</title>
-    <link rel="stylesheet" href="style.css" />
-    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Cabin&display=swap"
-      rel="stylesheet"
-    />
-  </head>
 
-  <body>
-    <div id="content">
-      <h1>Gender pay gap in the Pokémon video games</h1>
-      <h2>Context</h2>
-      <p>
-        The
-        <a href="https://en.wikipedia.org/wiki/Pok%C3%A9mon">Pokémon games</a>
-        have been an international success for more than 20 years, with console
-        games attracting hundreds of millions of players, a mobile app that
-        became a global phenomenon, and a Hollywood movie.
-      </p>
+<head>
+  <meta charset="utf-8" />
+  <title>Genders pay gap: Pokemon Gen 1</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
+  <link rel="preconnect" href="https://fonts.gstatic.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Cabin&display=swap" rel="stylesheet" />
+</head>
 
-      <!--
+<body>
+  <div id="content">
+    <h1>Gender pay gap in the Pokémon video games</h1>
+    <h2>Context</h2>
+    <p>
+      The
+      <a href="https://en.wikipedia.org/wiki/Pok%C3%A9mon">Pokémon games</a>
+      have been an international success for more than 20 years, with console
+      games attracting hundreds of millions of players, a mobile app that
+      became a global phenomenon, and a Hollywood movie.
+    </p>
+
+    <!--
       <p>
         Because they are such an important part of the video game and cultural
         landscape, it is intersting to wonder how they represent the world, and
@@ -32,180 +30,166 @@
       </p>
     -->
 
-      <figure>
-        <video src="assets/video_01_trainer_fight_start.mp4" controls></video>
-        <figcaption>An encounter with a trainer in a Pokémon game</figcaption>
-      </figure>
+    <figure>
+      <video src="assets/video_01_trainer_fight_start.mp4" controls></video>
+      <figcaption>An encounter with a trainer in a Pokémon game</figcaption>
+    </figure>
 
-      <p>
-        In the video game narrative, the Player embodies a Pokémon trainer, who
-        collects and trains many types of creatures. The main mechanic of the
-        games is to fight other trainers, until the Player is crowned Pokémon
-        Champion. After each victory, the Player is awarded a bit of
-        <a href="https://bulbapedia.bulbagarden.net/wiki/Prize_money"
-          >prize money</a
-        >
-        from the defeated challenger. On the contrary, if the Player is defeated,
-        they lose some prize money, the amount of which is exactly
-        <em>half their current money</em>
-        .
-      </p>
+    <p>
+      In the video game narrative, the Player embodies a Pokémon trainer, who
+      collects and trains many types of creatures. The main mechanic of the
+      games is to fight other trainers, until the Player is crowned Pokémon
+      Champion. After each victory, the Player is awarded a bit of
+      <a href="https://bulbapedia.bulbagarden.net/wiki/Prize_money">prize money</a>
+      from the defeated challenger. On the contrary, if the Player is defeated,
+      they lose some prize money, the amount of which is exactly
+      <em>half their current money</em>
+      .
+    </p>
 
-      <figure>
-        <video src="assets/video_02_prize_money.mp4" controls></video>
-        <figcaption>
-          Prize money received (832 of
-          <a href="https://bulbapedia.bulbagarden.net/wiki/Pok%C3%A9mon_Dollar"
-            >in-game currency</a
-          >) at the end of a fight
-        </figcaption>
-      </figure>
+    <figure>
+      <video src="assets/video_02_prize_money.mp4" controls></video>
+      <figcaption>
+        Prize money received (832 of
+        <a href="https://bulbapedia.bulbagarden.net/wiki/Pok%C3%A9mon_Dollar">in-game currency</a>) at the end of a
+        fight
+      </figcaption>
+    </figure>
 
-      <h2>Methodology</h2>
+    <h2>Methodology</h2>
 
-      <p>
-        Our goal is to use the prize money system of the Pokemon games to
-        estimate the gender pay gap between men and women in the Pokémon world.
-      </p>
+    <p>
+      Our goal is to <strong>use the prize money system of the Pokemon games to
+        estimate the gender pay gap between men and women in the Pokémon world.</strong>
+    </p>
 
-      <p>
-        Interestingly, being a Pokémon trainer does not seem to be a
-        full-time job, but rather a hobby enjoyed by almost anyone, be it
-        scientists, police agents or politicians. Because the prize money amount
-        is equal to half the current wealth of the defeated party, we suppose that
-        the prize money amount is proportional to that person's salary, and
-        analyze the pay gap directly from there.
-      </p>
+    <p>
+      Interestingly, being a Pokémon trainer does not seem to be a
+      full-time job, but rather a hobby enjoyed by almost anyone, be it
+      scientists, police agents or politicians. Because the prize money amount
+      is equal to half the current wealth of the defeated party, we suppose that
+      the prize money amount is proportional to that person's salary, and
+      analyze the pay gap directly from there.
+    </p>
 
-      <p>
-        This analysis is based on the trainers encountered during the
-        <a href="https://en.wikipedia.org/wiki/Pok%C3%A9mon_Red_and_Blue"
-          >first generation of Pokémon games</a
-        >, released in 1996. Note that subsequent re-releases of the games
-        include more gender diversity in the trainers.
-      </p>
+    <p>
+      This analysis is based on the trainers encountered during the
+      <a href="https://en.wikipedia.org/wiki/Pok%C3%A9mon_Red_and_Blue">first generation of Pokémon games</a>, released
+      in 1996. Note that subsequent re-releases of the games
+      include more gender diversity in the trainers.
+    </p>
 
-      <h2>Results</h2>
+    <h2>Results</h2>
 
-      <p>
-        <a href="data/combined_out.json" target="_blank"
-          >See raw results as JSON</a
-        >
-      </p>
+    <p>
+      <a href="data/combined_out.json" target="_blank">See raw results as JSON</a>
+    </p>
 
-      <p>
-        <a href="./data_only.html">Full-screen graphs (without comments)</a>
-      </p>
+    <p>
+      <a href="./data_only.html">Full-screen graphs (without comments)</a>
+    </p>
 
-      <h3>Gender gap in the trainer encounters</h3>
+    <h3>Gender gap in the trainer encounters</h3>
 
-      <p>
-        This first graph is not concerned with the prize money yet. We just
-        count how many men and women trainers the Player has the opportunity to
-        fight during a normal playthrough of the game.
-      </p>
-      <canvas id="occurenceGraph"></canvas>
-      <p>
-        In the end, the player encounters 323 trainers, and only 77 of them are
-        women.
-      </p>
+    <p>
+      This first graph is not concerned with the prize money yet. We just
+      count how many men and women trainers the Player has the opportunity to
+      fight during a normal playthrough of the game.
+    </p>
+    <canvas id="occurenceGraph"></canvas>
+    <p>
+      In the end, the player encounters 323 trainers, and only 77 of them are
+      women.
+    </p>
 
-      <h3>Prize money gender gap through the game</h3>
+    <h3>Prize money gender gap through the game</h3>
 
-      <p>
-        In this graph, we count the total amount of money received by the player
-        as prize money by men and women during the game.
-      </p>
-      <canvas id="throughTimeGraph"></canvas>
-      <p>
-        The graph is somewhat similar to the number of encounters, which seems
-        consistent. However, the high difference between the number of men and
-        women makes it difficult to compare the absolute value of prize money
-        received by each gender.
-      </p>
+    <p>
+      In this graph, we count the total amount of money received by the player
+      as prize money by men and women during the game.
+    </p>
+    <canvas id="throughTimeGraph"></canvas>
+    <p>
+      The graph is somewhat similar to the number of encounters, which seems
+      consistent. However, the high difference between the number of men and
+      women makes it difficult to compare the absolute value of prize money
+      received by each gender.
+    </p>
 
-      <h3>Average prize money</h3>
+    <h3>Average prize money</h3>
 
-      <p>
-        To get a clearer picture, we look at the average value of the prize
-        money after each encounter.
-      </p>
-      <canvas id="avgGraph"></canvas>
-      <p>
-        Even if the lack of diversity in trainers should be seen in itself as a
-        problem, this analysis was concerned with the perceived wealth of each
-        gender.
-      </p>
-      <p>
-        From that point of view, the Pokémon world is surpringly
-        gender-balanced. Both gender pay similar amounts of prize money during
-        the game, with the women even paying 7% more (on average) than men at
-        the end of the game. This means that men from the Pokémon world could
-        argue that they
-        <a
-          href="https://www.washingtonpost.com/graphics/2017/business/women-pay-gap/"
-          >work for free</a
-        >
-        26 days per year.
-      </p>
+    <p>
+      To get a clearer picture, we look at the average value of the prize
+      money after each encounter.
+    </p>
+    <canvas id="avgGraph"></canvas>
+    <p>
+      Even if the lack of diversity in trainers should be seen in itself as a
+      problem, this analysis was concerned with the perceived wealth of each
+      gender.
+    </p>
+    <p>
+      From that point of view, the Pokémon world is surpringly
+      gender-balanced. Both gender pay similar amounts of prize money during
+      the game, with the women even paying 7% more (on average) than men at
+      the end of the game. This means that men from the Pokémon world could
+      argue that they
+      <a href="https://www.washingtonpost.com/graphics/2017/business/women-pay-gap/">work for free</a>
+      26 days per year.
+    </p>
 
-      <p>
-        More realistically, this difference is probably due to the very low
-        number of female trainers, meaning that the women from the Gym Leaders
-        and Elite Four subgroups (who acts as mini-bosses during the games with
-        higher prize money) have a higher weight on the results.
-      </p>
+    <p>
+      More realistically, this difference is probably due to the very low
+      number of female trainers, meaning that the women from the Gym Leaders
+      and Elite Four subgroups (who acts as mini-bosses during the games with
+      higher prize money) have a higher weight on the results.
+    </p>
 
-      <h2>Conclusion</h2>
+    <h2>Conclusion</h2>
 
-      <p>I don't really know, honestly. But this was fun to do.</p>
+    <p>I don't really know, honestly. But this was fun to do.</p>
 
-      <hr />
+    <hr />
 
-      <h2>Credits</h2>
+    <h2>Credits</h2>
 
-      <p>
-        This is made by <a href="https://github.com/tchapeaux">tchapeaux</a>.
-        Source code available
-        <a href="https://github.com/tchapeaux/pokemon-gender-equality">here</a>
-      </p>
+    <p>
+      This is made by <a href="https://github.com/tchapeaux">tchapeaux</a>.
+      Source code available
+      <a href="https://github.com/tchapeaux/pokemon-gender-equality">here</a>
+    </p>
 
-      <p>
-        For this analysis, we used raw data from datasets available on the
-        internet and compiled by fans: we used
-        <a
-          href="https://gamefaqs.gamespot.com/gameboy/367023-pokemon-red-version/faqs/12776"
-          >this list of all trainers</a
-        >
-        compiled by Scott Walker and
-        <a href="https://bulbapedia.bulbagarden.net/wiki/Prize_money"
-          >this explanation of the prize money mechanism</a
-        >
-        from the
-        <a href="https://bulbapedia.bulbagarden.net">Bulbapedia</a> community.
-      </p>
+    <p>
+      For this analysis, we used raw data from datasets available on the
+      internet and compiled by fans: we used
+      <a href="https://gamefaqs.gamespot.com/gameboy/367023-pokemon-red-version/faqs/12776">this list of all
+        trainers</a>
+      compiled by Scott Walker and
+      <a href="https://bulbapedia.bulbagarden.net/wiki/Prize_money">this explanation of the prize money mechanism</a>
+      from the
+      <a href="https://bulbapedia.bulbagarden.net">Bulbapedia</a> community.
+    </p>
 
-      <p>Other credits include:</p>
-      <ul>
-        <li>
-          The video clips from the introduction are from
-          <a href="https://www.youtube.com/watch?v=_6uv4msYJiM"
-            >this playthrough</a
-          >
-          by the FCPlaythroughs channel. Artistic license was used when chosing
-          to illustrate an analysis of games from 1996 with their 2004 remakes.
-        </li>
-        <li>
-          <a href="https://www.chartjs.org/">Chart.js</a> was used for the
-          graphs.
-        </li>
-        <li>
-          The font used is
-          <a href="https://github.com/impallari/Cabin">Cabin</a>
-        </li>
-      </ul>
-    </div>
+    <p>Other credits include:</p>
+    <ul>
+      <li>
+        The video clips from the introduction are from
+        <a href="https://www.youtube.com/watch?v=_6uv4msYJiM">this playthrough</a>
+        by the FCPlaythroughs channel. Artistic license was used when chosing
+        to illustrate an analysis of games from 1996 with their 2004 remakes.
+      </li>
+      <li>
+        <a href="https://www.chartjs.org/">Chart.js</a> was used for the
+        graphs.
+      </li>
+      <li>
+        The font used is
+        <a href="https://github.com/impallari/Cabin">Cabin</a>
+      </li>
+    </ul>
+  </div>
 
-    <script src="src.js"></script>
-  </body>
+  <script src="src.js"></script>
+</body>
+
 </html>
